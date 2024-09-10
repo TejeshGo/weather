@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="Weather-1-main/style1.css" />
 </head>
 <body>
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city" spellcheck="false">
-            <button><img src="search.png"></button>
+            <button><img src="Weather-1-main/search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name-RETRY!!!</p>
         </div>
         <div class="weather">
-            <img src="rain.png" class="weather-icon">
+            <img src="Weather-1-main/rain.png" class="weather-icon">
             <h1 class="temp">22°c</h1>
             <h2 class="city">India</h2>
             <div class="details">
                 <div class="col">
-                    <img src="humidity.png">
+                    <img src="Weather-1-main/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="wind.png">
+                    <img src="Weather-1-main/wind.png">
                     <div>
                         <p class="wind">15km/h</p>
                         <p> Wind Speed </p>
@@ -67,26 +67,26 @@
 
            if(data.weather[0].main == "Clouds")
            {
-            weatherIcon.src = "clouds.png";
+            weatherIcon.src = "Weather-1-main/clouds.png";
            }
            else if(data.weather[0].main == "Clear")
            {
-            weatherIcon.src = "clear.png";
+            weatherIcon.src = "Weather-1-main/clear.png";
            }
 
            else if(data.weather[0].main == "Rain")
            {
-            weatherIcon.src = "rain.png";
+            weatherIcon.src = "Weather-1-main/rain.png";
            }
 
            else if(data.weather[0].main == "Drizzle")
            {
-            weatherIcon.src = "drizzle.png";
+            weatherIcon.src = "Weather-1-main/drizzle.png";
            }
 
            else if(data.weather[0].main == "Mist")
            {
-            weatherIcon.src = "mist.png";
+            weatherIcon.src = "Weather-1-main/mist.png";
            }
 
            document.querySelector(".weather").style.display = "block";
